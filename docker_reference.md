@@ -18,10 +18,10 @@ docker image inspect <IMAGE_ID>
 ## Docker run
 ### -e to add environment variables
 ```
-docker run -d -p <EXTERNAL_PORT>:<INTERNAL_PORT> --name <APP_NAME> <DOCKER_USERNAME>/<IMAGE_NAME>:<TAG>
+docker run -d -p <EXTERNAL_PORT>:<APP_INTERNAL_PORT> --name <APP_NAME> <DOCKER_USERNAME>/<IMAGE_NAME>:<TAG>
 ```
 ```
-docker container run -d -p <EXTERNAL_PORT1>:<APP_INTERNAL_PORT2> -p <EXTERNAL_PORT2>:<APP_INTERNAL_PORT2> --name <APP_NAME> <DOCKER_USERNAME>/<IMAGE_NAME>:<TAG>
+docker container run -d -p <EXTERNAL_PORT1>:<APP_INTERNAL_PORT1> -p <EXTERNAL_PORT2>:<APP_INTERNAL_PORT2> --name <APP_NAME> <DOCKER_USERNAME>/<IMAGE_NAME>:<TAG>
 ```
 
 ## Docker container list (all containers)
